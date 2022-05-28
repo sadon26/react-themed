@@ -9,12 +9,12 @@ const ThemeToggler = () => {
     const { setActions } = useActionsContext();
 
     const toggleTheme = (darkTheme: Boolean, sendMessage: Boolean = false) => {
-        document.body.classList[darkTheme ? "remove" : "add"]("dark__mode");
-        localStorage.setItem("darkMode", !darkTheme ? "enabled" : "disabled");
-        setDarkMode(!darkTheme);
+        document.body.classList[darkTheme ? "add" : "remove"]("dark__mode");
+        localStorage.setItem("darkMode", darkTheme ? "enabled" : "disabled");
+        setDarkMode(darkTheme);
 
         if (sendMessage) {
-            setActions(`Theme was set to ${!darkMode ? "Dark" : "Light"}`);
+            setActions(`Theme was set to ${darkMode ? "Dark" : "Light"}`);
         }
     };
 
@@ -32,7 +32,7 @@ const ThemeToggler = () => {
         <div className="theme__body">
             <button
                 className="theme__btn"
-                onClick={() => toggleTheme(darkMode, true)}
+                onClick={() => toggleTheme(!darkMode, true)}
             >
                 Set {btnText} Theme
             </button>
