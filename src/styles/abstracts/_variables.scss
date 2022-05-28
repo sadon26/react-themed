@@ -1,0 +1,21 @@
+:root {
+    --btn-bg-color: #cc0000;
+    --btn-bg-color-two: #000;
+    --btn-text: #fff;
+    --btn-text-two: #fff;
+    --text-color-one: #2f4f4f;
+    --text-color-two: #000000;
+    --main-bg-one: #cecece;
+    --main-bg-two: #ffffff;
+}
+
+:root .dark__mode {
+    --btn-bg-color: #f0f8ff;
+    --btn-bg-color-two: #cc7000;
+    --btn-text: #800080;
+    --btn-text-two: #fff;
+    --text-color-one: #696969;
+    --text-color-two: #ffffff;
+    --main-bg-one: #ffffff;
+    --main-bg-two: #008080;
+}

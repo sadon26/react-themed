@@ -1,0 +1,39 @@
+.theme {
+    &__body {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        background: var(--btn-bg-color);
+        color: var(--btn-text);
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        transition: 0.3s all ease-out;
+        margin-bottom: 30px;
+
+        &.two {
+            background: var(--btn-bg-color-two);
+            color: var(--btn-text-two);
+        }
+
+        &--spacer {
+            display: flex;
+            column-gap: 5px;
+            flex-wrap: wrap;
+
+            & > :last-child {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__text-area {
+        width: 500px;
+        height: 200px;
+        padding: 20px;
+        margin-bottom: 20px;
+        display: block;
+    }
+}

@@ -1,0 +1,17 @@
+.actions {
+    background: var(--main-bg-two);
+    color: var(--text-color-two);
+    transition: 0.3s all ease-out;
+
+    &__heading {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 12px;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
