@@ -14,7 +14,7 @@ const ThemeToggler = () => {
         setDarkMode(darkTheme);
 
         if (sendMessage) {
-            setActions(`Theme was set to ${darkMode ? "Dark" : "Light"}`);
+            setActions(`Theme was set to ${darkTheme ? "Dark" : "Light"}`);
         }
     };
 
