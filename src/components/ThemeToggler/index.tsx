@@ -24,8 +24,6 @@ const ThemeToggler = () => {
         // eslint-disable-next-line
     }, []);
 
-    useEffect(() => {}, []);
-
     const btnText = darkMode ? "Light" : "Dark";
 
     return (
